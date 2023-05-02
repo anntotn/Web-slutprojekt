@@ -6,12 +6,15 @@
   scroll-behavior: smooth;
 }
 
+.navbar__1 {
+  display: flex;
+  align-items: center;
+}
+
 .navbar {
   background: black;
   height: 80px;
-  display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 1.2rem;
   position: sticky;
   top: 0;
@@ -37,16 +40,12 @@
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
 }
 
 .navbar__menu {
-  display: flex;
-  align-items: center;
   list-style: none;
 }
 
@@ -56,8 +55,6 @@
 
 .navbar__links {
   color: white;
-  display: flex;
-  align-items: center;
   justify-content: center;
   width: 125px;
   text-decoration: none;
@@ -66,17 +63,13 @@
 }
 
 .navbar__btn {
-  display: flex;
   justify-content: center;
-  align-items: center;
   padding: 0 1rem;
   width: 100%;
 }
 
 .button {
-  display: flex;
   justify-content: center;
-  align-items: center;
   text-decoration: none;
   padding: 10px 20px;
   height: 100%;
@@ -151,9 +144,7 @@
   }
 
   .button {
-    display: flex;
     justify-content: center;
-    align-items: center;
     width: 80%;
     height: 80px;
     margin: 0;
