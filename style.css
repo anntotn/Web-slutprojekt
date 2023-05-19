@@ -6,6 +6,8 @@
   scroll-behavior: smooth;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* nav */
 
 .navbar {
@@ -461,6 +463,7 @@
 }
 
 .services h1 {
+  font-family: "Roboto", sans-serif;
   background-color: #ff8177;
   background-image: linear-gradient(to right, #ff0844 0%, #ffb199 100%);
   background-size: 100%;
@@ -491,10 +494,25 @@
   transition: 0.3s ease-in;
 }
 
+img {
+  height: 40%;
+}
+
 .services__card:nth-child(2) {
-  background: #1fa2ff;
-  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  background-image: url("0x0.webp");
+  background-size: cover;
+}
+
+@keyframes gradient-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .services__card:nth-child(3) {
@@ -505,6 +523,8 @@
     #ff1361 67%,
     #fff800 100%
   );
+  background-size: 400% 400%;
+  animation: gradient-bg 10s ease infinite;
 }
 
 .services__card h2 {
@@ -908,3 +928,18 @@ textarea {
 }
 
 /* table */
+
+table {
+  width: 100%;
+  height: 80vh;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: white;
+  background-color: #131313;
+}
